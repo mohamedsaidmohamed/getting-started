@@ -1,0 +1,15 @@
+Build the container image.
+$ cd /path/to/app
+$ docker build -t getting-started .
+
+$docker run -dp 3000:3000 getting-started
+// You use the -d flag to run the new container in “detached” mode (in the background).
+// You also use the -p flag to create a mapping between the host’s port 3000 to the container’s port 3000.
+// Without the port mapping, you wouldn’t be able to access the application.
+
+$docker ps
+//Run the following docker ps command in a terminal to list your containers.
+
+
+
+
